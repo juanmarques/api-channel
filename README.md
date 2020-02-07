@@ -1,3 +1,7 @@
+# Weather API
+https://openweathermap.org/api?fbclid=IwAR1R6y3vLbn8e0LuQXpd5wS7G38jJlDJBpbTWoip5vz5ENGuwXjxuznxCbA
+
+
 # MyFirstApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
