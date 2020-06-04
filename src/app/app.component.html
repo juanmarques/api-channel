@@ -1,3 +1,20 @@
-
-<router-outlet></router-outlet>
-<!-- <img src="assets/images/sun-yellow-512.png"> -->
+<app-header (featureSelectedNav)="onNavigate($event)"></app-header>
+<div class="container-fluid" id="mainContent">
+    <div class="row">
+        <div class="boxApi">
+            <div class="apiBox" *ngIf="loadedFeature === 'weatherApi'">
+                <h1>Weather</h1>
+                <router-outlet ></router-outlet>
+            </div>
+            <div class="apiBox" *ngIf="loadedFeature === 'hashtagApi'">
+                <app-hashtag></app-hashtag>
+            </div>
+            <div class="apiBox" *ngIf="loadedFeature === 'bibleApi'">
+                <app-bible></app-bible>
+            </div>
+            <div class="apiBox" *ngIf="loadedFeature === 'cocktailApi'">
+                <app-cocktail></app-cocktail>
+            </div>     
+        </div>
+    </div>
+</div>

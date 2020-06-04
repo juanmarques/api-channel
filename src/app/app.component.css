@@ -1,0 +1,13 @@
+#mainContent{
+    background-color: var(--lightGraY);
+}
+.boxApi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.apiBox{
+    background-color: var(--white);
+    padding: 1rem;
+    margin: 0.25rem;
+}

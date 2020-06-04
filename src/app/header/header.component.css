@@ -1,0 +1,17 @@
+#nav{
+    background-color: var(--darkGreen);
+    padding: 1rem;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    
+    justify-content: space-evenly;
+}
+.logo{
+    width: 5rem;
+}

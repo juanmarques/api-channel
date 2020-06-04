@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --mediumGreen:#10ac84;
+    --darkGreen:#10ac84;
+
+    --mediumRed:#ff6b6b;
+    --darkRed:#ee5253;
+
+    --lightGray: #c8d6e5;
+    --mediumGray:#8395a7;
+    --darkGray:#222f3e;
+
+    --darkBlue:#2e303f;
+
+    --white: #ffffff;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--lightGray);
+}
+
+
+.btn{
+    border: none;
+    border-radius: 0;
+}
+.btnPrimary{
+    background-color: var(--darkBlue);
+    color: var(--white) !important;
+    font-size: 1.05rem;
+    margin: 0.25rem;
+}
