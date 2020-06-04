@@ -11,6 +11,7 @@ import { ReactiveFormsModule  } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ApixuService } from "./apixu.service";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ApixuService } from "./apixu.service";
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
-    AppRountingModule
+    AppRountingModule,
+    BrowserAnimationsModule
   ],
   providers: [ApixuService, Title],
   bootstrap: [AppComponent]
