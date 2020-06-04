@@ -14,9 +14,6 @@ export class HeaderComponent implements OnInit {
     console.log(feature);
   }
 
-  // constructor() { }
-
-
   title = 'feature';
 
   constructor(private titleService: Title) {}
