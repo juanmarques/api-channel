@@ -21,12 +21,21 @@ body{
 
 
 .btn{
-    border: none;
+    border: 1px solid;
     border-radius: 0;
+    padding: .375rem 1.75rem;
 }
 .btnPrimary{
     background-color: var(--darkBlue);
     color: var(--white) !important;
     font-size: 1.05rem;
     margin: 0.25rem;
+}
+.btnPrimary.active {
+    background-color: var(--mediumGreen) !important;
+    color: var(--white) !important;
+    font-size: 1.05rem;
+    margin: 0.25rem;
+    border: none !important;
+    font-weight: bold;
 }

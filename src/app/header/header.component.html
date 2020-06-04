@@ -1,7 +1,9 @@
 <div class="container-fluid" id="nav">
-        <div><img src="../../assets/images/mimobr-logo.jpg" class="img-fluid logo" (click)="onSelectNav('mainPage', $event)"/></div>
-        <div><a class="btn btnPrimary" (click)="onSelectNav('weatherApi', $event)">Weather</a></div>
-        <div><a class="btn btnPrimary" (click)="onSelectNav('hashtagApi', $event)">Hashtag</a></div>
-        <div><a class="btn btnPrimary" (click)="onSelectNav('bibleApi', $event)">Bible</a></div>
-        <div><a class="btn btnPrimary" (click)="onSelectNav('cocktailApi', $event)">Cocktail</a></div>
+        <div><img src="../../assets/images/mimobr-logo.jpg" class="img-fluid logo" (click)="onSelectNav('mainPage', $event); setDocTitle('Main Page')"/></div>
+        <div><a class="btn btnPrimary" routerLink="/weatherUrl" routerLinkActive="active">Weather Router</a></div>
+        <div><a class="btn btnPrimary" routerLink="/hashtagUrl" routerLinkActive="active">Hashtag Router</a></div>
+        <!-- <div><a class="btn btnPrimary" (click)="onSelectNav('weatherApi', $event)">Weather</a></div>
+        <div><a class="btn btnPrimary" (click)="onSelectNav('hashtagApi', $event)">Hashtag</a></div> -->
+        <div><a class="btn btnPrimary" (click)="onSelectNav('bibleApi', $event); setDocTitle('Bible Page')">Bible</a></div>
+        <div><a class="btn btnPrimary" (click)="onSelectNav('cocktailApi', $event); setDocTitle('Cocktail Page')">Cocktail</a></div>
 </div>
