@@ -9,9 +9,10 @@ import { ReactiveFormsModule  } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ApixuService } from "./apixu.service";
+import { HashtagComponent } from './hashtag/hashtag.component';
 
 @NgModule({
-  declarations: [ AppComponent, WeatherComponent ],
+  declarations: [ AppComponent, WeatherComponent, HashtagComponent ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(allAppRoutes),
