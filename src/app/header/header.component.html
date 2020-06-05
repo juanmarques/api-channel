@@ -1,11 +1,15 @@
 <div class="container-fluid" id="nav">
         <div><img src="../../assets/images/mimobr-logo.jpg" class="img-fluid logo" (click)="onSelectNav('mainPage'); setDocTitle('Main Page')"/></div>
-        <div><a class="btn btnPrimary" routerLink="/weatherUrl" routerLinkActive="active">Weather Router</a></div>
-        <div><a class="btn btnPrimary" routerLink="/hashtagUrl" routerLinkActive="active">Hashtag Router</a></div>
-        <div><a class="btn btnPrimary" 
+        <div><a class="btn btnPrimary" routerLink="/weatherUrl" routerLinkActive="active"
+                
+                >Weather Router</a></div>
+        <div><a class="btn btnPrimary" routerLink="/hashtagUrl" routerLinkActive="active"
+                
+                >Hashtag Router</a></div>
+        <div><a class="btn btnPrimary" routerLink="/bibleUrl" routerLinkActive="active"
                 (click)="onSelectNav('bibleApi');setDocTitle('Bible Page')"
                 >Bible</a></div>
-        <div><a class="btn btnPrimary" 
+        <div><a class="btn btnPrimary" routerLink="/cocktailUrl" routerLinkActive="active"
                 (click)="onSelectNav('cocktailApi');setDocTitle('Cocktail Page')"
                 >Cocktail</a></div>
 </div>

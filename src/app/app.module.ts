@@ -5,7 +5,8 @@ import { AppComponent } from "./app.component";
 
 import { HeaderComponent } from './header/header.component';
 
-import { AppRountingModule, routingComponets } from './app-routing.module';
+import { AppRountingModule, routingComponets } from './header/routerlink';
+// import { AppRountingModule, routingComponets } from './app-routing.module';
 
 import { ReactiveFormsModule  } from '@angular/forms';
 
