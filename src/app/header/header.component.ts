@@ -14,14 +14,14 @@ export class HeaderComponent implements OnInit {
     console.log(feature);
   }
 
+  /*  Title Dinamic  */
   title = 'feature';
-
-  constructor(private titleService: Title) {}
-
+  constructor(private titleService: Title) {};
   setDocTitle(title: string) {
      console.log('current title:::::' + this.titleService.getTitle());
-     this.titleService.setTitle(title);
+     this.titleService.setTitle(title);;
   }
+  /*  Title Dinamic  */
   
   ngOnInit() {
   }
