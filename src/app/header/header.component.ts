@@ -11,17 +11,16 @@ export class HeaderComponent implements OnInit {
 
   onSelectNav(feature: string){
     this.featureSelectedNav.emit(feature);
-    console.log(feature);
+    // console.log(feature);
   }
 
   /*  Title Dinamic  */
   title = 'feature';
   constructor(private titleService: Title) {};
   setDocTitle(title: string) {
-     console.log('current title:::::' + this.titleService.getTitle());
-     this.titleService.setTitle(title);;
+    // console.log('current title:::::' + this.titleService.getTitle());
+    this.titleService.setTitle(title);;
   }
-  /*  Title Dinamic  */
   
   ngOnInit() {
   }

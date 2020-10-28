@@ -1,0 +1,55 @@
+<h3 class="text-center my-4">Location Details:</h3>
+<p class="text-center">
+  Name {{this.mainLocation?.location.name}}
+</p>
+<p class="text-center">
+  Region {{this.mainLocation?.location.region}}
+</p>
+<p class="text-center">
+  Country {{this.mainLocation?.location.country}}
+</p>
+<p class="text-center">
+  Timezone {{this.mainLocation?.location.timezone_id}}
+</p>
+<p class="text-center">
+  UTC {{this.mainLocation?.location.utc_offset}}
+</p>
+<p class="text-center">
+  Latitude {{this.mainLocation?.location.lat}}
+</p>
+<p class="text-center">
+  Longitude {{this.mainLocation?.location.lon}}
+</p>
+
+<h3 class="text-center my-4">Weather Details:</h3>
+<p class="text-center">
+  Temperature {{this.mainLocation?.current.temperature}}ºC
+</p>
+<p class="text-center">
+  Feels like {{this.mainLocation?.current.feelslike}}ºC
+</p>
+<p class="text-center">
+  {{this.mainLocation?.current.weather_descriptions}}
+</p>
+<img src="{{this.mainLocation?.current.weather_icons}}">
+<p class="text-center">
+  Humidity {{this.mainLocation?.current.feelslike}}%
+</p>
+<p class="text-center">
+  Observation Time {{this.mainLocation?.current.observation_time}}
+</p>
+<p class="text-center">
+  Precipitation {{this.mainLocation?.current.precip}}%
+</p>
+<p class="text-center">
+  UV {{this.mainLocation?.current.uv_index}}%
+</p>
+<p class="text-center">
+  Wind Temperature {{this.mainLocation?.current.uv_index}}ºC
+</p>
+<p class="text-center">
+  Wind Direction {{this.mainLocation?.current.uv_index}}
+</p>
+<p class="text-center">
+  Wind Speed {{this.mainLocation?.current.uv_index}}km/h
+</p>

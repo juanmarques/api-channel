@@ -1,17 +1,27 @@
 <div class="container-fluid" id="nav">
-        <div><img src="../../assets/images/mimobr-logo.jpg" class="img-fluid logo" 
-                routerLink="/"
-                (click)="onSelectNav('mainPage'); setDocTitle('Main Page')"/></div>
-        <div><a class="btn btnPrimary" routerLink="/weatherUrl" routerLinkActive="active"
-                (click)="onSelectNav('weatherApi');setDocTitle('Weather Page')"
-                >Weather Router</a></div>
-        <div><a class="btn btnPrimary" routerLink="/hashtagUrl" routerLinkActive="active"
-                (click)="onSelectNav('hashtagApi');setDocTitle('Hashtag Page')"
-                >Hashtag Router</a></div>
-        <div><a class="btn btnPrimary" routerLink="/bibleUrl" routerLinkActive="active"
-                (click)="onSelectNav('bibleApi');setDocTitle('Bible Page')"
-                >Bible</a></div>
-        <div><a class="btn btnPrimary" routerLink="/cocktailUrl" routerLinkActive="active"
-                (click)="onSelectNav('cocktailApi');setDocTitle('Cocktail Page')"
-                >Cocktail</a></div>
+        <div>
+                <img src="assets/images/mimobr-logo.jpg" class="img-fluid logo" 
+                routerLink="/angular/weather/"
+                (click)="onSelectNav('mainPage'); setDocTitle('Main Page')"/>
+        </div>
+        <div>
+                <a class="btn btnPrimary" routerLink="/hashtagUrl" routerLinkActive="active"
+                        (click)="onSelectNav('hashtagApi');setDocTitle('Hashtag Page')"
+                >Hashtag Router</a>
+        </div>
+        <div>
+                <a class="btn btnPrimary" routerLink="/bibleUrl" routerLinkActive="active"
+                        (click)="onSelectNav('bibleApi');setDocTitle('Bible Page')"
+                >Bible</a>
+        </div>
+        <div>
+                <a class="btn btnPrimary" routerLink="/cocktailUrl" routerLinkActive="active"
+                        (click)="onSelectNav('cocktailApi');setDocTitle('Cocktail Page')"
+                >Cocktail</a>
+        </div>
+        <div>
+                <a class="btn btnPrimary" routerLink="/weatherchannel" routerLinkActive="active"
+                        (click)="onSelectNav('weatherchannelApi');setDocTitle('Weather Channel')"
+                >Weather Channel</a>
+        </div>
 </div>

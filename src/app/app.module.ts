@@ -6,17 +6,18 @@ import { AppComponent } from "./app.component";
 import { HeaderComponent } from './header/header.component';
 
 import { AppRountingModule, routingComponets } from './header/routerlink';
-// import { AppRountingModule, routingComponets } from './app-routing.module';
 
 import { ReactiveFormsModule  } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ApixuService } from "./apixu.service";
+import { ApixuServiceWeather } from "./weather-channel/servicesWT/apixu.service";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { LocationResultComponent } from './weather-channel/location-result/location-result.component';
+import { LocationSearchComponent } from './weather-channel/location-search/location-search.component';
 
 @NgModule({
-  declarations: [ AppComponent, HeaderComponent, routingComponets ],
+  declarations: [ AppComponent, HeaderComponent, routingComponets, LocationResultComponent, LocationSearchComponent ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
@@ -24,9 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRountingModule,
     BrowserAnimationsModule
   ],
-  providers: [ApixuService, Title],
+  providers: [ApixuService, Title, ApixuServiceWeather],
   bootstrap: [AppComponent]
 })
-
 
 export class AppModule { }

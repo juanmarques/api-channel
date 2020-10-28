@@ -1,5 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div>
+                <h2>The Hashtag used</h2>
+            </div>
+            <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <div>
+                <div>
+                    <input type="text" formControlName="tag">
+                </div>
+                <!-- <div>
+                    <input type="text" formControlName="lastName">
+                </div> -->
+                <div>
+                    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>    
 
-<h2>The Hashtag used</h2>
 
 <p>Insta API</p>
 https://fauzihalabe.github.io/instapi/#/landing
@@ -8,6 +29,7 @@ https://documenter.getpostman.com/view/3189281/SzKZsG6d?version=latest#993a5493-
 <!-- /*var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 
+var raw = JSON.stringify({"tag":"porto"},{"user": "reinaldo"});
 var raw = JSON.stringify({"tag":"porto"},{"user": "reinaldo"});
 
 var requestOptions = {

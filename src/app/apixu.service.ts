@@ -12,7 +12,7 @@ export class ApixuService {
       return this.http.get(
           'http://api.weatherstack.com/current?access_key=661f3bc12ab0dd1fe470bdb9151ddcbe&query=' + location
 
-          // http://api.weatherstack.com/current?access_key=661f3bc12ab0dd1fe470bdb9151ddcbe&query=Porto
+          // https://api.weatherstack.com/current?access_key=661f3bc12ab0dd1fe470bdb9151ddcbe&query=Porto
       );
   }
 }

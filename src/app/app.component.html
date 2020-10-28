@@ -6,9 +6,6 @@
 <div class="container-fluid" id="mainContent">
     <div class="row">
         <div class="boxApi">
-            <div class="apiBox" *ngIf="loadedFeature === 'weatherApi'">
-                <app-weather></app-weather>
-            </div>
             <div class="apiBox" *ngIf="loadedFeature === 'hashtagApi'">
                 <app-hashtag></app-hashtag>
             </div>
@@ -18,7 +15,10 @@
             </div>
             <div class="apiBox" *ngIf="loadedFeature === 'cocktailApi'">
                 <app-cocktail></app-cocktail>
-            </div>     
+            </div>  
+            <div class="apiBox" *ngIf="loadedFeature === 'weatherchannelApi'">
+                <app-weather-channel></app-weather-channel>
+            </div>    
         </div>
     </div>
 </div>

@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from "@angular/router";
 
-import { WeatherComponent } from "../weather/weather.component";
 import { HashtagComponent } from '../hashtag/hashtag.component';
 import { CocktailComponent } from '../cocktail/cocktail.component';
 import { BibleComponent } from '../bible/bible.component';
+import { WeatherChannelComponent } from '../weather-channel/weather-channel.component';
 
 const routes: Routes = [
-    {path: 'weatherUrl', component: WeatherComponent},
     {path: 'hashtagUrl', component: HashtagComponent},
     {path: 'cocktailUrl', component: CocktailComponent},
-    {path: 'bibleUrl', component: BibleComponent}
+    {path: 'bibleUrl', component: BibleComponent},
+    {path: 'weatherchannel', component: WeatherChannelComponent}
   ]
 
 @NgModule({
@@ -19,4 +19,4 @@ const routes: Routes = [
 })
 
 export class AppRountingModule { }
-export const routingComponets = [WeatherComponent, HashtagComponent, CocktailComponent, BibleComponent]
+export const routingComponets = [HashtagComponent, CocktailComponent, BibleComponent, WeatherChannelComponent]
