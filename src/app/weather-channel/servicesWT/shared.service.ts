@@ -18,8 +18,6 @@ export class SharedService {
     // console.log('service get---');
     // console.log(this.mainLocation);
     // return this.mainLocation;
-    this.mainLocation.subscribe(()=>{
-      
-    });
+    return this.mainLocation;
   }
 }

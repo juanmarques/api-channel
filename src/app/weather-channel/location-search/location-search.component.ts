@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { EventEmitter } from 'events';
 import { ApixuServiceWeather } from "../servicesWT/apixu.service";
 import { SharedService } from "../servicesWT/shared.service";
 
@@ -9,10 +10,12 @@ import { SharedService } from "../servicesWT/shared.service";
   styleUrls: ['./location-search.component.css']
 })
 export class LocationSearchComponent implements OnInit {
+
+  didVote = false;
+
   public weatherSearchForm: FormGroup;
   public weatherData: any;
   public mainLocation:any;
-  private isButtonVisible = true;
   
   constructor(
     private formBuilder: FormBuilder,    
@@ -25,8 +28,11 @@ export class LocationSearchComponent implements OnInit {
       locationName: ['']
     });
   }
-
+  
   sendToApixuWeather(formValues) {
+    this.didVote = true;
+
+
     this.apixuServiceWeather
       .getWeather(formValues.locationName)
       .subscribe(data => {

@@ -4,12 +4,12 @@
 >
     <div class="form-group">
         <input class="form-control" type="text" placeholder="Please name of city"
-            formControlName="locationName"
+            formControlName="locationName" 
         />
     </div>
     <div class="text-center"> 
-        <button type="submit"  id="getLoc" class="btn btn-success btn-md"
-
+        <button type="submit"  id="getLoc" class="btn btn-success btn-md" 
+            [disabled]="didVote" 
         >
             Click to discovery
         </button>

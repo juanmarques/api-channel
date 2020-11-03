@@ -1,6 +1,5 @@
 <app-header (featureSelectedNav)="onNavigate($event)"></app-header>
 
-
 <!-- <router-outlet ></router-outlet> -->
 
 <div class="container-fluid" id="mainContent">
@@ -9,7 +8,6 @@
             <div class="apiBox" *ngIf="loadedFeature === 'hashtagApi'">
                 <app-hashtag></app-hashtag>
             </div>
-
             <div class="apiBox" *ngIf="loadedFeature === 'bibleApi'">
                 <app-bible></app-bible>
             </div>

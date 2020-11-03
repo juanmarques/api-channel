@@ -19,10 +19,10 @@ export class LocationResultComponent implements OnInit {
       this.mainLocation = this.shared.getMainLocation();
       console.log(this.mainLocation);
       
-      if(this.mainLocation != null){
-        console.log('comi um marisquinhoooooooooooooo');
-        return;
-      }
+      // if(this.mainLocation != null){
+        // console.log('comi um marisquinhoooooooooooooo');
+        // return;
+      // }
     }, 1000);
   }
 }

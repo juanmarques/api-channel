@@ -10,7 +10,6 @@ import { AppRountingModule, routingComponets } from './header/routerlink';
 import { ReactiveFormsModule  } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
-import { ApixuService } from "./apixu.service";
 import { ApixuServiceWeather } from "./weather-channel/servicesWT/apixu.service";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LocationResultComponent } from './weather-channel/location-result/location-result.component';
@@ -25,7 +24,7 @@ import { LocationSearchComponent } from './weather-channel/location-search/locat
     AppRountingModule,
     BrowserAnimationsModule
   ],
-  providers: [ApixuService, Title, ApixuServiceWeather],
+  providers: [Title, ApixuServiceWeather],
   bootstrap: [AppComponent]
 })
 
