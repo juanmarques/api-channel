@@ -1,17 +1,20 @@
 <h3 class="text-center my-4">Which city do you want to know the temperature?</h3>
-<form [formGroup]="weatherSearchForm" 
+<form [formGroup]="weatherSearchForm"
     (ngSubmit)="sendToApixuWeather(weatherSearchForm.value)"
 >
     <div class="form-group">
         <input class="form-control" type="text" placeholder="Please name of city"
-            formControlName="locationName" 
+            formControlName="locationName"
         />
     </div>
-    <div class="text-center"> 
-        <button type="submit"  id="getLoc" class="btn btn-success btn-md" 
-            [disabled]="didVote" 
-        >
+    <div class="text-center">
+        <button type="submit"  id="getLoc" class="btn btn-success btn-md">
             Click to discovery
         </button>
+
+        <div *ngIf="didVote">
+          <app-location-result></app-location-result>
+      </div>
+
     </div>
 </form>

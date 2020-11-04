@@ -11,17 +11,17 @@ export class LocationResultComponent implements OnInit {
   mainLocation: any;
 
   constructor(
-    private shared : SharedService
-  ){ }
+    private shared: SharedService
+  ) { }
 
   ngOnInit() {
     setInterval(() => {
       this.mainLocation = this.shared.getMainLocation();
       console.log(this.mainLocation);
-      
+
       // if(this.mainLocation != null){
-        // console.log('comi um marisquinhoooooooooooooo');
-        // return;
+      // console.log('comi um marisquinhoooooooooooooo');
+      // return;
       // }
     }, 1000);
   }

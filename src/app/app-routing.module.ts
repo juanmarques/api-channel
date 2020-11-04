@@ -1,22 +1,24 @@
-// import { NgModule } from '@angular/core';
-// import { Routes, RouterModule } from "@angular/router";
+import { WeatherChannelComponent } from './weather-channel/weather-channel.component';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
-// import { WeatherComponent } from "./weather/weather.component";
-// import { HashtagComponent } from './hashtag/hashtag.component';
-// import { CocktailComponent } from './cocktail/cocktail.component';
-// import { BibleComponent } from './bible/bible.component';
+import { HashtagComponent } from './hashtag/hashtag.component';
+import { CocktailComponent } from './cocktail/cocktail.component';
+import { BibleComponent } from './bible/bible.component';
+import { LocationResultComponent } from './weather-channel/location-result/location-result.component';
 
-// const routes: Routes = [
-//     {path: 'weatherUrl', component: WeatherComponent},
-//     {path: 'hashtagUrl', component: HashtagComponent},
-//     {path: 'cocktailUrl', component: CocktailComponent},
-//     {path: 'bibleUrl', component: BibleComponent}
-//   ]
+const routes: Routes = [
+    {path: 'weatherUrl', component: WeatherChannelComponent},
+    {path: 'hashtagUrl', component: HashtagComponent},
+    {path: 'cocktailUrl', component: CocktailComponent},
+    {path: 'bibleUrl', component: BibleComponent},
+    {path: 'weather-result', component: LocationResultComponent}
+  ];
 
-// @NgModule({
-//     imports: [RouterModule.forRoot(routes)],
-//     exports:[RouterModule]
-// })
+@NgModule({
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
+})
 
-// export class AppRountingModule { }
-// export const routingComponets = [WeatherComponent, HashtagComponent, CocktailComponent, BibleComponent]
+export class AppRountingModule { }
+export const routingComponets = [WeatherChannelComponent, HashtagComponent, CocktailComponent, BibleComponent];

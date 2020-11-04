@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { EventEmitter } from 'events';
@@ -15,20 +16,21 @@ export class LocationSearchComponent implements OnInit {
 
   public weatherSearchForm: FormGroup;
   public weatherData: any;
-  public mainLocation:any;
-  
-  constructor(
-    private formBuilder: FormBuilder,    
-    private apixuServiceWeather: ApixuServiceWeather,
-    private shared : SharedService
-  ){}
+  public mainLocation: any;
 
-  ngOnInit(){
+  constructor(
+    private formBuilder: FormBuilder,
+    private apixuServiceWeather: ApixuServiceWeather,
+    private shared: SharedService,
+    private router: Router
+  ) { }
+
+  ngOnInit() {
     this.weatherSearchForm = this.formBuilder.group({
       locationName: ['']
     });
   }
-  
+
   sendToApixuWeather(formValues) {
     this.didVote = true;
 
@@ -36,11 +38,9 @@ export class LocationSearchComponent implements OnInit {
     this.apixuServiceWeather
       .getWeather(formValues.locationName)
       .subscribe(data => {
-        // this.weatherData = data;
-        // console.log(this.weatherData);
-        // console.log(data);
-
-        this.shared.setMainLocation(this.mainLocation = data);
+         this.weatherData = data;
+         console.log(this.weatherData);
+         this.shared.setMainLocation(this.mainLocation = data);
         // console.log('search');
         // console.log(this.shared.setMainLocation(this.mainLocation = data));
       });
